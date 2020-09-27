@@ -33,7 +33,7 @@ def simulation(number_players, initial_amount, number_steps):
         list_averages.append(statistics.mean([pr[i] for pr in results]))
     fig = plt.figure("Average")
     plt.plot(list_averages)
-    fig.savefig(f'output/average_{number_players}.png')
+    fig.savefig(f'output/result_{number_players}.png')
     
 
 simulation(
