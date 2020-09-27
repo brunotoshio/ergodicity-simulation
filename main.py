@@ -2,6 +2,7 @@ from concurrent.futures import ThreadPoolExecutor
 import random
 import statistics
 import matplotlib.pyplot as plt
+import settings
 
 
 def step(amount):
@@ -35,4 +36,8 @@ def simulation(number_players, initial_amount, number_steps):
     fig.savefig(f'output/average_{number_players}.png')
     
 
-simulation(1000000, 1, 50)
+simulation(
+    settings.NUMBER_OF_PLAYERS,
+    settings.INITIAL_AMOUNT,
+    settings.NUMBER_OF_STEPS
+)
