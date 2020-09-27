@@ -34,5 +34,5 @@ def simulation(number_players, initial_amount, number_steps):
     plt.plot(list_averages)
     fig.savefig(f'output/average_{number_players}.png')
     
-result = simulation(1000000, 1, 50)
 
+simulation(1000000, 1, 50)
